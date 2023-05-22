@@ -48,12 +48,12 @@ function Navbar() {
                 <img src={logo} className="h-20 "></img>
             </div>
             <div className='basis-1/2 text-xl mt-5 font-inter'>
-                <ul className={'list-none flex justify-around items-center' + ' ' + active}>
+                <ul className={'list-none flex justify-end px-10 gap-x-20 items-center' + ' ' + active}>
                     <li className='font-bold active:translate-y-1 hover:text-dgrey' onClick={navToggle1}>
                         <Link to="/">Home</Link>
                     </li>
                     <li className='font-bold  active:translate-y-1 hover:text-dgrey' onClick={navToggle1}> <Link to="/teams">Teams</Link></li>
-                    <li className='font-bold  active:translate-y-1 hover:text-dgrey' onClick={navToggle1}> <Link to="/preevents">Pre-events</Link></li>
+                    {/* <li className='font-bold  active:translate-y-1 hover:text-dgrey' onClick={navToggle1}> <Link to="/preevents">Pre-events</Link></li> */}
                     <Link to="/redirect"><button onClick={navToggle1} className='bg-rednew text-white p-3  rounded-md hover:bg-dgreen active:translate-y-1'
                         style={
                             { "borderRadius": "6px" }
