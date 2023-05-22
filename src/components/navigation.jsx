@@ -50,11 +50,11 @@ function Navbar() {
             </div>
             <div className=' text-xl mt-5 font-inter'>
                 <ul className={'list-none flex  justify-center md:justify-around gap-x-20 gap-y-24  px-10  items-center' + ' ' + active}>
-                    <li className='font-bold active:translate-y-1 hover:text-dgrey' onClick={navToggle1}>
+                    <li className='font-semibold active:translate-y-1 hover:text-dgrey' onClick={navToggle1}>
                         <Link to="/">Home</Link>
                     </li>
-                    <li className='font-bold  active:translate-y-1 hover:text-dgrey' onClick={navToggle1}> <Link to="/teams">Teams</Link></li>
-                    <li className='font-bold  active:translate-y-1 hover:text-dgrey' onClick={navToggle1}> <Link to="/">Pre-events</Link></li>
+                    <li className='font-semibold  active:translate-y-1 hover:text-dgrey' onClick={navToggle1}> <Link to="/teams">Teams</Link></li>
+                    <li className='font-semibold  active:translate-y-1 hover:text-dgrey' onClick={navToggle1}> <Link to="/">Pre-events</Link></li>
                     {/* <Link to="/redirect"> */}
 
                     <a href="https://register.osmhack.org/" target='_blank'><button onClick={navToggle1} className='bg-rednew text-white p-3  rounded-md hover:bg-dgreen active:translate-y-1'
