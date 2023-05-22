@@ -6,7 +6,7 @@ function PrizePool() {
     return (
         <div className="h-30 flex flex-col p-20 justify-around items-center gap-y-20"
             style={
-                { backgroundColor: "#2A2F4F" }
+                { backgroundColor: "#202A44 " }
             }
         >
             <h1 className=" text-3xl md:text-5xl text-center font-bold text-[#ffa600] font-inter tracking-wider">PRIZE POOL</h1>
