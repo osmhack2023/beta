@@ -13,6 +13,7 @@ import samir from "./img2/samir.png";
 import suyog from "./img2/suog.png";
 import sushal from "./img2/sushal.png";
 import rishi from "./img2/rishi.png";
+import bibisha from "./img2/bibisha.png";
 import "./style2.css";
 const Team = () => {
   return (
@@ -56,8 +57,8 @@ const Team = () => {
             <p className="text-2xl ">Aakriti Adhikari</p>
           </div>
           <div className="flex flex-col justify-center items-center gap-y-2">
-            <img src={suyog} className="h-72 w-72 " />
-            <p className="text-2xl ">Suyog Shrestha</p>
+            <img src={bibisha} className="h-72 w-72 " />
+            <p className="text-2xl ">Bibisha Baniya</p>
           </div>
         </div>
       </div>
@@ -135,10 +136,10 @@ const Team = () => {
             <img src={rishi} className="h-72 w-72 " />
             <p className="text-2xl ">Rishi Aryal</p>
           </div>
-          <div className="flex flex-col justify-center items-center gap-y-2">
+          {/* <div className="flex flex-col justify-center items-center gap-y-2">
             <img src={suyog} className="h-72 w-72 " />
             <p className="text-2xl ">Suyog Shrestha</p>
-          </div>
+          </div> */}
         </div>
       </div>
 

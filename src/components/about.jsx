@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 function About() {
 
     return (
-        <div className=" p-16 md:p-32 flex flex-col justify-around gap-y-24 font-inter font-bold text-xl" style={
+        <div className=" p-16 md:p-32 flex flex-col justify-around gap-y-24 font-inter font-semibold text-xl" style={
             { backgroundColor: "#E7F5FF" }
         }>
             <div>

@@ -1,4 +1,5 @@
 import logo from '../logo.png'
+
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { useEffect } from 'react';
@@ -47,8 +48,8 @@ function Navbar() {
             <div>
                 <Link to="/"><img src={logo} className="h-20 "></img></Link>
             </div>
-            <div className='basis-1/2 text-xl mt-5 font-inter'>
-                <ul className={'list-none flex  justify-center gap-y-24 md:justify-end px-10 gap-x-20 items-center' + ' ' + active}>
+            <div className=' text-xl mt-5 font-inter'>
+                <ul className={'list-none flex  justify-center md:justify-around gap-x-20 gap-y-24  px-10  items-center' + ' ' + active}>
                     <li className='font-bold active:translate-y-1 hover:text-dgrey' onClick={navToggle1}>
                         <Link to="/">Home</Link>
                     </li>

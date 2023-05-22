@@ -7,7 +7,7 @@ import opentech from "../images/opentech.png"
 import gupta from "../images/gupta.png"
 function Organizers() {
     return (
-        <div className="flex flex-col font-inter"
+        <div className="flex flex-col font-inter uppercase"
 
         >
 
@@ -15,7 +15,7 @@ function Organizers() {
                 style={{ backgroundColor: '#F3F3F3' }}>
 
                 <div className="flex flex-col items-center justify-around gap-y-24">
-                    <h1 className="font-semibold  text-2xl md:text-5xl text-center tracking-wide">Organized By</h1>
+                    <h1 className="font-bold  text-2xl md:text-5xl text-center tracking-wide">Organized By</h1>
                     <div className="flex gap-y-10 flex-col md:flex-row justify-around items-center">
                         <img src={osac} className=" h-24 w-64 md:h-50"></img>
 
