@@ -9,7 +9,7 @@ function PrizePool() {
                 { backgroundColor: "#2A2F4F" }
             }
         >
-            <h1 className=" text-3xl md:text-5xl text-center font-bold text-white font-inter tracking-wider">PRIZE POOL</h1>
+            <h1 className=" text-3xl md:text-5xl text-center font-bold text-[#ffa600] font-inter tracking-wider">PRIZE POOL</h1>
 
             {/* <div className='flex flex-col justify-center items-center text-black gap-y-5'>
                 <div>
@@ -28,9 +28,8 @@ function PrizePool() {
                     </div>
 
 
-                    <h1 className='text-2xl md:text-5xl font-bold' style={
-                        { WebkitTextStroke: '1px white' }
-                    }>Rs 25,000</h1>
+                    <h1 className='text-2xl md:text-5xl font-semibold text-white'
+                    >Rs 25,000</h1>
                 </div>
                 <div className='flex flex-col justify-center items-center text-black gap-y-5'>
                     <div>
@@ -38,9 +37,7 @@ function PrizePool() {
                     </div>
 
 
-                    <h1 className='text-2xl md:text-5xl font-bold' style={
-                        { WebkitTextStroke: '1px white' }
-                    }>Rs 25,000</h1>
+                    <h1 className='text-2xl md:text-5xl font-bold text-white'>Rs 25,000</h1>
                 </div>
                 <div className='flex flex-col justify-center items-center text-black gap-y-5'>
                     <div>
@@ -48,9 +45,7 @@ function PrizePool() {
                     </div>
 
 
-                    <h1 className='text-2xl md:text-5xl font-bold' style={
-                        { WebkitTextStroke: '1px white' }
-                    }>Rs 25,000</h1>
+                    <h1 className='text-2xl md:text-5xl font-bold text-white' >Rs 25,000</h1>
                 </div>
 
             </div>

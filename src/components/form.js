@@ -6,17 +6,40 @@ import { doc, setDoc } from "firebase/firestore";
 import "./style2.css";
 import { useState } from "react";
 import Loader from "./microcomponents/loader";
-const Form = () => {
-  const formRef = useRef();
+import ReCAPTCHA from "react-google-recaptcha";
+export const Form = () => {
+  const siteKey = process.env.REACT_APP_reCAPTCHA_SITE_KEY;
+  const recaptchaRef = React.createRef();
+  const formRef = useRef(); //ref of entire form component
+  const fileRef = useRef(); //ref of file input field
   const [error1, seterror1] = useState(null);
   const [error2, seterror2] = useState(null);
-  const [loading, setloading] = useState(false);
+  // const [loading, setloading] = useState(false)
   const [open, setopen] = useState(false);
   const [data, setData] = React.useState({});
 
+  //to validate if the file submitted is int correct extensions
+  const fileValidation = () => {
+    var fileInput = fileRef.current;
+
+    var filePath = fileInput.value;
+
+    // Allowing file type
+    var allowedExtensions = /(\.pdf|\.png|\.jpg|\.jpeg)$/i;
+
+    if (!allowedExtensions.exec(filePath)) {
+      alert("Invalid file type");
+      fileInput.value = "";
+      return false;
+    }
+  };
+
+  //close snackbar
   const handleclose = () => {
     setopen(false);
   };
+
+  //to update form data for database after each onchange event
   const update = (e) => {
     setData({
       ...data,
@@ -28,27 +51,41 @@ const Form = () => {
 
   let fileItem;
   let fileName;
+
+  //get file from input fild
   const getimg = (e) => {
     fileItem = e.target.files[0];
     fileName = fileItem.name;
   };
-  const testsubmit = (e) => {
+
+  //submit form
+  const submit = async (e) => {
+    // setloading(true)
     e.preventDefault();
-
-    console.log(data);
-  };
-
-  // const submit = (e) => {
-  //   e.preventDefault();
-  //   console.log(fileName);
-  //   e.preventDefault();
-  // }
-  const submit = (e) => {
-    setloading(true);
-    e.preventDefault();
-
+    const token = await recaptchaRef.current.executeAsync();
+    let formData = new FormData();
+    formData.append("token", token);
+    // submit to backend API endpoint here
+    const response = await fetch("http://v.osac.org.np:9000/api/submit/", {
+      method: "POST",
+      body: formData,
+      mode: "cors",
+    });
+    const captchaResponse = await response.json();
+    console.log("captchresponse", captchaResponse);
+    console.log("first", captchaResponse.success);
+    if (!captchaResponse.success) {
+      seterror1(captchaResponse.message);
+      return;
+    }
+    console.log("file item", fileItem);
+    if (fileItem === undefined) {
+      seterror1("error");
+      setopen(true);
+      return;
+    }
     const spaceRef = ref(storage, "proposal/" + fileName);
-    console.log(fileItem);
+
     uploadBytes(spaceRef, fileItem)
       .then((snapshot) => {
         console.log("Uploaded proposal!");
@@ -68,9 +105,10 @@ const Form = () => {
                   ...data,
                   url: url,
                 };
+
                 fetch(
-                  // process.env.REACT_APP_API
-                  "https://sheet.best/api/sheets/802a7ace-8d3b-4de4-a311-61928b2bfc31",
+                  "https://sheet.best/api/sheets/ff6db3c6-f2c3-41fc-bec0-05bc1b693381",
+                  // "https://sheet.best/api/sheets/802a7ace-8d3b-4de4-a311-61928b2bfc31",
                   {
                     method: "POST",
                     mode: "cors",
@@ -102,84 +140,12 @@ const Form = () => {
       .then(() => {
         setopen(true);
         formRef.current.reset();
-        setloading(false);
+        // setloading(false)
       });
   };
-
-  //   const spaceRef = ref(storage, "proposals/" + fileName);
-  //    uploadBytes(spaceRef, fileItem).then((snapshot) => {
-  //     console.log("Uploaded a proposal!");
-  //     getDownloadURL(snapshot.ref).then(async (url) => {
-  //       setData({
-  //         ...data,
-  //        "url" : url,
-  //       });
-  //       const id = data.name + data.email;
-
-  //       // Add a new document in collection "teams"
-  //       const adddoc = await setDoc(doc(db, "teams", id), {
-  //         data,
-  //       }).then(() => {
-  //         fetch(
-  //           "https://sheet.best/api/sheets/802a7ace-8d3b-4de4-a311-61928b2bfc31",
-  //           {
-  //             method: "POST",
-  //             mode: "cors",
-  //             headers: {
-  //               "Content-Type": "application/json",
-  //             },
-  //             body: JSON.stringify(data),
-  //           }
-  //         )
-  //           .then((r) => r.json())
-  //           .then((data) => {
-  //             // The response comes here
-  //             console.log(data);
-  //           })
-  //           .catch((error) => {
-  //             // Errors are reported there
-  //             console.log(error);
-  //           });
-  //       });
-  //     });
-  //   });
-  // };
-
-  const submitHandler = async (e) => {
-    e.preventDefault();
-    const data = {
-      Id: 16,
-      Name: "ack Doe",
-      Age: 97,
-      "Created at": new Date(),
-    };
-
-    // Add one line to the sheet
-    fetch(
-      "https://sheet.best/api/sheets/802a7ace-8d3b-4de4-a311-61928b2bfc31",
-      {
-        method: "POST",
-        mode: "cors",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      }
-    )
-      .then((r) => r.json())
-      .then((data) => {
-        // The response comes here
-        console.log(data);
-      })
-      .catch((error) => {
-        // Errors are reported there
-        console.log(error);
-      });
-  };
-
   return (
     <div className="form flex flex-col pt-5  h-[100vh] w-full px-20 gap-10 ">
-      <Loader open={open} />
+      {/* <Loader open={open} /> */}
       <p className="header  font-bold text-3xl md:text-5xl">
         Registration form for OSMHack2023
       </p>
@@ -555,10 +521,16 @@ const Form = () => {
         >
           Submit
         </button>
+        <ReCAPTCHA
+          ref={recaptchaRef}
+          size="invisible"
+          sitekey="6LcNtCQmAAAAAJHXrxbe8UvoMPSwp6XHdR9Qo6cf"
+          // sitekey={siteKey}
+        />
       </form>
       <Snackbar
         open={open}
-        autoHideDuration={5000}
+        autoHideDuration={1000}
         onClose={handleclose}
         message={error1 === null || error2 === null ? "success" : "error"}
       />
