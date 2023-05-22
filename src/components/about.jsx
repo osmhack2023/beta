@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 function About() {
 
     return (
-        <div className="p-32 flex flex-col justify-around gap-y-24 font-inter font-bold text-xl" style={
+        <div className=" p-16 md:p-32 flex flex-col justify-around gap-y-24 font-inter font-bold text-xl" style={
             { backgroundColor: "#E7F5FF" }
         }>
             <div>
@@ -18,13 +19,14 @@ function About() {
                     At the end of the hackathon, projects will be judged based on their impact, creativity, and technical implementation, with prizes awarded to the most innovative and impactful solutions. Don't miss this opportunity to use OSM for a good cause and make a positive difference in the world. Join us and be part of the movement for change!
                 </p>
             </div>
-            <button className='bg-rednew text-white p-3 w-30 ml-auto'
+            <button className='bg-rednew text-white p-3 w-30 m-auto md:ml-auto hover:bg-dgreen active:translate-y-1'
                 style={
-                    { "border": "1px solid #0000FF", "borderRadius": "6px" }
+                    { "borderRadius": "6px" }
                 }
-            >Register Now</button>
+            ><Link to="/redirect">Register Now</Link></button>
         </div>
     )
 }
 
 export default About;
+

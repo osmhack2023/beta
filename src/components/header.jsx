@@ -5,7 +5,7 @@ import { BsCalendarEvent } from 'react-icons/bs'
 import { GoLocation } from 'react-icons/go'
 function Header() {
     return (
-        <div className=' h-128 w-full mt-2 flex flex-col items-center justify-around '
+        <div className=' h-128 w-full mt-2 flex flex-col items-center justify-around gap-y-5 transition-all duration-1000'
 
             style={{
                 backgroundImage: `url(${cover})`,
@@ -20,12 +20,12 @@ function Header() {
             }}
         >
             <div className='flex flex-col '>
-                <h1 className='text-center font-inter text-7xl text-white p-auto gap-y-0 '
+                <h1 className='text-center font-inter text-3xl sm:text-4xl md:text-7xl text-white p-auto gap-y-0 -z-1'
                     style={
                         { "color": "#FFFFFF", "fontWeight": "600", "textShadow": "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)", "backdropFilter": "blur(7.5px)" }
                     }
                 >OSM Hack 2023</h1>
-                <h2 className='text-center font-inter  text-5xl text-white mt-5'
+                <h2 className='text-center font-inter text-3xl md:text-5xl text-white mt-5'
                     style={{ "textShadow": "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)", "backdropFilter": "blur(7.5px)", "fontWeight": "700", "font-style": "italic" }}
                 > Hacking for a good cause</h2>
 
@@ -36,7 +36,7 @@ function Header() {
                 <div className='flex flex-row items-center gap-x-2'>
                     {/* <img src={location} className='h-'></img> */}
                     <GoLocation className='text-white text-5xl'></GoLocation>
-                    <h1 className='text-3xl'
+                    <h1 className='text-3xl text-center'
                         style={
                             { "fontWeight": "600", "lineHeight": "53px", "color": "#FFFFFF", "textShadow": "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)", "backdropFilter": "blur(5.5px)" }
                         }

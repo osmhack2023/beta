@@ -6,35 +6,35 @@ function PrizePool() {
                 { backgroundColor: "#E7F5FF" }
             }
         >
-            <h1 className="text-6xl text-center font-bold text-rednew">PRIZE POOL</h1>
+            <h1 className=" text-3xl md:text-6xl text-center font-bold text-rednew">PRIZE POOL</h1>
 
             <div className='flex flex-col justify-center items-center text-black gap-y-5'>
                 <div>
-                    <BsFillTrophyFill className='text-9xl text-gold '></BsFillTrophyFill>
+                    <BsFillTrophyFill className='text-6xl md:text-9xl text-gold '></BsFillTrophyFill>
                 </div>
 
-                <h2 className='text-3xl'>FIRST</h2>
-                <h1 className='text-4xl font-bold'>Rs 25,000</h1>
+                <h2 className='text-2xl md:text-3xl'>FIRST</h2>
+                <h1 className='text-2xl md:text-4xl font-bold'>Rs 25,000</h1>
             </div>
 
-            <div className='flex flex-row justify-around w-full '>
+            <div className='flex flex-col gap-y-16 md:flex-row justify-around w-full '>
 
                 <div className='flex flex-col justify-center items-center text-black gap-y-5'>
                     <div>
-                        <BsFillTrophyFill className='text-9xl text-silver'
+                        <BsFillTrophyFill className='text-6xl md:text-9xl text-silver'
                         ></BsFillTrophyFill>
                     </div>
 
-                    <h2 className='text-3xl'>SECOND</h2>
-                    <h1 className='text-4xl font-bold'>Rs 15,000</h1>
+                    <h2 className='text-2xl md:text-3xl'>SECOND</h2>
+                    <h1 className='text-2xl md:text-4xl font-bold'>Rs 15,000</h1>
                 </div>
-                <div className='flex flex-col justify-center items-center text-black gap-y-5'>
+                <div className='flex  flex-col justify-center items-center text-black gap-y-5'>
                     <div>
-                        <BsFillTrophyFill className='text-9xl text-bronze '></BsFillTrophyFill>
+                        <BsFillTrophyFill className='text-6xl md:text-9xl text-bronze '></BsFillTrophyFill>
                     </div>
 
-                    <h2 className='text-3xl'>THIRD</h2>
-                    <h1 className='text-4xl font-bold'>Rs 10,000</h1>
+                    <h2 className='text-2xl md:text-3xl'>THIRD</h2>
+                    <h1 className='text-2xl md:text-4xl font-bold'>Rs 10,000</h1>
                 </div>
             </div>
         </div>
