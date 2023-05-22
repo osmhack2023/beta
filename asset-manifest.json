@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4093be11.css",
+    "main.js": "/static/js/main.13658159.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/heroda.jpg": "/static/media/heroda.233963b5437a42ec37b2.jpg",
+    "static/media/sushal.png": "/static/media/sushal.5fd934f4498987577941.png",
+    "static/media/aaku.png": "/static/media/aaku.6bcc16f59cd520dc573e.png",
+    "static/media/suog.png": "/static/media/suog.eeeee43bf6cf9ee72190.png",
+    "static/media/hancy.png": "/static/media/hancy.6347ca11a138ada8d485.png",
+    "static/media/ikku.png": "/static/media/ikku.af201a0b6b89d6812338.png",
+    "static/media/samir.png": "/static/media/samir.9296274c03a7045cf378.png",
+    "static/media/rishi.png": "/static/media/rishi.4d4268ee08514d3d4877.png",
+    "static/media/rajmasr.png": "/static/media/rajmasr.323b7fb173a2e9825fde.png",
+    "static/media/dear.png": "/static/media/dear.7d407742a8d9446b8486.png",
+    "static/media/dipen.png": "/static/media/dipen.462e19ca02016cc540a7.png",
+    "static/media/ranji.png": "/static/media/ranji.6a676ee35884404db9fd.png",
+    "static/media/abnsh.png": "/static/media/abnsh.19d0ac9931d067955427.png",
+    "static/media/bridbalak.png": "/static/media/bridbalak.fc894ee9ebdffcd56d59.png",
+    "static/media/newocv.jpg": "/static/media/newocv.03bfe18867bc44ca868b.jpg",
+    "static/media/greenfield.png": "/static/media/greenfield.1803686e97ad598820a4.png",
+    "static/media/human.png": "/static/media/human.52f0c6a961694d9c61ff.png",
+    "static/media/mapping.png": "/static/media/mapping.b53e6f135f0cd1e23f71.png",
+    "static/media/opentech.png": "/static/media/opentech.36242ca41b0a784e027d.png",
+    "static/media/knowledge.png": "/static/media/knowledge.a8ae4ecc8cc849eac3a3.png",
+    "static/media/osac.png": "/static/media/osac.a94918f413f23db9aac8.png",
+    "static/media/trophy3.png": "/static/media/trophy3.15bbd7c48c0f06ef9835.png",
+    "static/media/trophy2.png": "/static/media/trophy2.2ef7b422b11856069251.png",
+    "static/media/trophy1.png": "/static/media/trophy1.74679e7fa6f4fbd875c0.png",
+    "static/media/logo.png": "/static/media/logo.b16d71639fc5ff946f04.png",
+    "index.html": "/index.html",
+    "main.4093be11.css.map": "/static/css/main.4093be11.css.map",
+    "main.13658159.js.map": "/static/js/main.13658159.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4093be11.css",
+    "static/js/main.13658159.js"
+  ]
+}
