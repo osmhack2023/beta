@@ -74,7 +74,7 @@ const Team = () => {
         <div className="flex flex-col md:flex-row  gap-y-20 justify-center">
           <div className="flex flex-col justify-center items-center gap-y-2">
             <img src={dear} className="h-72 w-72 " />
-            <p className="text-2xl ">Hemanta</p>
+            <p className="text-2xl ">Hemanta Sharma</p>
           </div>
           <div className="flex flex-col justify-center items-center gap-y-2">
             <img src={suyog} className="h-72 w-72 " />
@@ -110,7 +110,7 @@ const Team = () => {
           </div>
           <div className="flex flex-col justify-center items-center gap-y-2">
             <img src={dear} className="h-72 w-72 " />
-            <p className="text-2xl ">Hemanta</p>
+            <p className="text-2xl ">Hemanta Sharma</p>
           </div>
         </div>
       </div>
