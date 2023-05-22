@@ -56,7 +56,7 @@ function Navbar() {
                     <li className='font-bold  active:translate-y-1 hover:text-dgrey' onClick={navToggle1}> <Link to="/">Pre-events</Link></li>
                     {/* <Link to="/redirect"> */}
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdz7lmM4T4EmoOCyw5X-WbhnARjj8G9Pav3c4qg9cCkhYvyRQ/viewform?usp=send_form" target='_blank'><button onClick={navToggle1} className='bg-rednew text-white p-3  rounded-md hover:bg-dgreen active:translate-y-1'
+                    <a href="https://register.osmhack.org/" target='_blank'><button onClick={navToggle1} className='bg-rednew text-white p-3  rounded-md hover:bg-dgreen active:translate-y-1'
                         style={
                             { "borderRadius": "6px" }
                         }

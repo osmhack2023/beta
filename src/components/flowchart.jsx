@@ -2,8 +2,8 @@ function Flowchart(
 ) {
 
     return (
-        <div className="flex flex-col  gap-y-5 md:gap-y-20 bg-[#202A44] py-10 px-18 md:py-16 md:px-28 w-full " id="d1">
-            <div className="flex flex-col items-center gap-y-20 md:flex-row justify-around">
+        <div className="flex flex-col  gap-y-16 md:gap-y-20 bg-[#202A44] py-10 px-18 md:py-16 md:px-28 w-full " id="d1">
+            <div className="flex flex-col items-center gap-y-10 md:flex-row justify-around">
                 <div className="flex flex-col rounded-full p-5 md:py-14 md:px-10 justify-center gap-y-10 md:gap-y-0 md:justify-around"
                     style={{ "background": "white", "height": "17rem", "width": "17rem", "boxShadow": "4px 4px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)" }}
                 >
