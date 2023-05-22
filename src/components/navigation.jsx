@@ -54,12 +54,12 @@ function Navbar() {
                     </li>
                     <li className='font-bold  active:translate-y-1 hover:text-dgrey' onClick={navToggle1}> <Link to="/teams">Teams</Link></li>
                     <li className='font-bold  active:translate-y-1 hover:text-dgrey' onClick={navToggle1}> <Link to="/preevents">Pre-events</Link></li>
-                    <button onClick={navToggle1} className='bg-rednew text-white p-3  rounded-md hover:bg-dgreen active:translate-y-1'
+                    <Link to="/redirect"><button onClick={navToggle1} className='bg-rednew text-white p-3  rounded-md hover:bg-dgreen active:translate-y-1'
                         style={
                             { "borderRadius": "6px" }
                         }
                     >
-                        <Link to="/redirect">Register Now</Link></button>
+                        Register Now</button></Link>
                 </ul>
 
 

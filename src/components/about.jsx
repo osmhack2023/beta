@@ -19,11 +19,11 @@ function About() {
                     At the end of the hackathon, projects will be judged based on their impact, creativity, and technical implementation, with prizes awarded to the most innovative and impactful solutions. Don't miss this opportunity to use OSM for a good cause and make a positive difference in the world. Join us and be part of the movement for change!
                 </p>
             </div>
-            <button className='bg-rednew text-white p-3 w-30 m-auto md:ml-auto hover:bg-dgreen active:translate-y-1'
+            <Link to="/redirect"><button className='bg-rednew text-white p-3 w-30 m-auto md:ml-auto hover:bg-dgreen active:translate-y-1'
                 style={
                     { "borderRadius": "6px" }
                 }
-            ><Link to="/redirect">Register Now</Link></button>
+            >Register Now</button></Link>
         </div>
     )
 }
