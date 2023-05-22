@@ -35,13 +35,13 @@ function Header() {
 
                 <div className='flex flex-row items-center gap-x-2'>
                     {/* <img src={location} className='h-'></img> */}
-                    <GoLocation className='text-white text-5xl'></GoLocation>
+                    {/* <GoLocation className='text-white text-5xl'></GoLocation> */}
                     <h1 className='text-3xl text-center'
                         style={
                             { "fontWeight": "600", "lineHeight": "53px", "color": "#FFFFFF", "textShadow": "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)", "backdropFilter": "blur(5.5px)" }
                         }
 
-                    >Greenfield National College</h1>
+                    >Registration Deadline: May 29</h1>
                 </div>
 
                 <div className='flex flex-row items-center gap-x-4'>
@@ -52,7 +52,7 @@ function Header() {
                         style={
                             { "fontWeight": "600", "lineHeight": "53px", "color": "#FFFFFF", "textShadow": "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)", "backdropFilter": "blur(5.5px)" }
                         }
-                    >June 6 and 7</h1>
+                    >Event: June 6 and 7</h1>
                 </div>
 
             </div>

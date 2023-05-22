@@ -17,7 +17,7 @@ function Organizers() {
                 <h1 className="font-semibold  text-2xl md:text-5xl text-center tracking-wide">ORGANIZERS</h1>
                 <div className="flex gap-y-10 flex-col md:flex-row justify-around items-center">
                     <img src={osac} className=" h-24 w-64 md:h-50"></img>
-                    <img src={greenfield} className=" h-50 w-64 md:h-50"></img>
+
                 </div>
 
             </div>
