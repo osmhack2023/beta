@@ -45,7 +45,7 @@ function Navbar() {
 
         <nav className={"flex justify-between mt-2 nav"}>
             <div>
-                <img src={logo} className="h-20 "></img>
+                <Link to="/"><img src={logo} className="h-20 "></img></Link>
             </div>
             <div className='basis-1/2 text-xl mt-5 font-inter'>
                 <ul className={'list-none flex  justify-center gap-y-24 md:justify-end px-10 gap-x-20 items-center' + ' ' + active}>

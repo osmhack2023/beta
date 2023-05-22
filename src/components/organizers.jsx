@@ -4,7 +4,7 @@ import mapping from "../images/mapping.png"
 import knowledge from "../images/knowledge.png"
 import human from "../images/human.png"
 import opentech from "../images/opentech.png"
-
+import gupta from "../images/gupta.png"
 function Organizers() {
     return (
         <div className="flex flex-col font-inter"
@@ -53,17 +53,17 @@ function Organizers() {
                 </div>
 
             </div>
-            {/* <div className="flex flex-col w-full justify-around p-20 gap-y-20"
+            <div className="flex flex-col w-full justify-around p-20 gap-y-20"
                 style={{ backgroundColor: 'white' }}>
 
-                <h1 className="font-bold text-2xl md:text-5xl text-center tracking-wide ">Community Partner</h1>
+                <h1 className="font-bold text-2xl md:text-5xl text-center tracking-wide ">Social Media Partner</h1>
                 <div className="flex flex-col gap-y-20  md:flex-row justify-around items-center">
-                    <img src={human} className=" h-24 w-96 md:h-auto"></img>
-                    <img src={knowledge} className=" h-30 w-72 md:h-auto"></img>
+                    <img src={gupta} className=""></img>
+                    {/* <img src={knowledge} className=" h-30 w-72 md:h-auto"></img> */}
                 </div>
 
 
-            </div> */}
+            </div>
         </div>
     )
 }
