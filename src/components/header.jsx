@@ -27,7 +27,7 @@ function Header() {
                 >OSM Hack 2023</h1>
                 <h2 className='text-center font-inter text-3xl md:text-5xl text-white mt-5'
                     style={{ "textShadow": "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)", "backdropFilter": "blur(7.5px)", "fontWeight": "700", "font-style": "italic" }}
-                > Hacking for a good cause</h2>
+                > OSM for a good cause</h2>
 
             </div>
 
