@@ -41,7 +41,7 @@ function Header() {
                             { "fontWeight": "600", "lineHeight": "53px", "color": "#FFFFFF", "textShadow": "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)", "backdropFilter": "blur(5.5px)" }
                         }
 
-                    >Registration Deadline: May 29</h1>
+                    >Registration Deadline: May 28</h1>
                 </div>
 
                 <div className='flex flex-row items-center gap-x-4'>
