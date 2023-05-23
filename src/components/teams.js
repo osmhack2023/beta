@@ -43,7 +43,7 @@ const Team = () => {
           "RESOURCES TEAM"
         </h2>
 
-        <div className="flex flex-col md:flex-row  gap-y-30 justify-center text-white font-akshar">
+        <div className="flex flex-col md:flex-row  gap-y-20 justify-center text-white font-akshar">
           <div className="flex flex-col justify-center items-center gap-y-2">
             <img src={hancy} className="h-72 w-72 " />
             <p className="text-2xl ">Pradip Chapagain</p>
