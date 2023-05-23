@@ -27,7 +27,7 @@ function Organizers() {
 
                     <h1 className="font-bold text-2xl md:text-5xl text-center tracking-wide">Sponsored By</h1>
                     <div className="flex flex-row justify-around">
-                        <img src={mapping} className=" h-40 w-72 md:h-auto"></img>
+                        <img src={mapping} className=" h-36 w-72 md:h-auto"></img>
 
                     </div>
                 </div>

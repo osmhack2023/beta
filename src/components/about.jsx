@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 function About() {
 
     return (
-        <div className=" p-16 md:p-32 flex flex-col justify-around gap-y-24 font-inter font-semibold text-xl" style={
+        <div className=" p-16 md:p-32 flex flex-col justify-around gap-y-24 font-inter font-semibold text-lg md:text-xl" style={
             { backgroundColor: "#E7F5FF" }
         }>
             <div>
@@ -20,11 +20,11 @@ function About() {
                 </p>
             </div>
             <a href="https://register.osmhack.org/" target='_blank'><button className='bg-rednew text-white p-3  rounded-md hover:bg-dgreen active:translate-y-1'
-                        style={
-                            { "borderRadius": "6px" }
-                        }
-                    >
-                        Register Now</button></a>
+                style={
+                    { "borderRadius": "6px" }
+                }
+            >
+                Register Now</button></a>
         </div>
     )
 }
