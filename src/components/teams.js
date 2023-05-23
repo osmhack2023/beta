@@ -37,7 +37,7 @@ const Team = () => {
       {/* /* RESOURCES */}
       <div
         className="flex flex-col justify-center items-center gap-y-16  p-16"
-        style={{ backgroundColor: "#202A44" }}
+        style={{ backgroundColor: "#FFF5F5" }}
       >
         <h2 className="team-name text-4xl font-semibold text-center">
           Resources
