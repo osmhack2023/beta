@@ -20,7 +20,7 @@ const Formredirect = () => {
         <a
           href="https://forms.gle/nh8JywfHmHEfZFRQ8"
           target="_"
-          className="  text-center  text-xl md:text-2xl bg-rednew text-white p-6 hover:bg-dgreen  active:translate-y-1"
+          className="  text-center  text-xl md:text-2xl bg-dblue text-white p-6 hover:bg-dgreen  active:translate-y-1"
         >
           Apply through Google Forms
         </a>

@@ -20,30 +20,30 @@ const Team = () => {
     <div className="flex flex-col">
       <div
         className="flex flex-col gap-y-10"
-        style={{ backgroundColor: "#E7F5FF" }}
+        style={{ backgroundColor: "#202A44" }}
       >
-        <h1 className="text-3xl md:text-5xl font-bold font-inter text-center text-rednew mt-10">
-          ORGANIZERS
+        <h1 className="text-3xl md:text-3xl font-bold font-inter text-center text-rednew mt-5">
+          <u>ORGANIZERS</u>
         </h1>
-        <div className="flex flex-col justify-center items-center gap-y-5 pb-10">
-          <h2 className="team-name text-4xl font-semibold text-center">
-            Event Lead
+        <div className="flex flex-col justify-center items-center gap-y-5 pb-10 text-white">
+          <h2 className="team-name text-4xl font-semibold text-center font-mono">
+          "EVENT LEAD" 
           </h2>
           <img src={samir} className="h-72 w-72 " />
-          <p className="text-2xl font-semibold">Samir Koirala</p>
+          <p className="text-2xl font-semibold font-akshar">Samir Koirala</p>
         </div>
       </div>
 
       {/* /* RESOURCES */}
       <div
         className="flex flex-col justify-center items-center gap-y-16  p-16"
-        style={{ backgroundColor: "#FFF5F5" }}
+        style={{ backgroundColor: "#202A44" }}
       >
-        <h2 className="team-name text-4xl font-semibold text-center">
-          Resources
+        <h2 className="team-name text-4xl font-semibold text-center text-white font-mono">
+          "RESOURCES TEAM"
         </h2>
 
-        <div className="flex flex-col md:flex-row  gap-y-20 justify-center">
+        <div className="flex flex-col md:flex-row  gap-y-30 justify-center text-white font-akshar">
           <div className="flex flex-col justify-center items-center gap-y-2">
             <img src={hancy} className="h-72 w-72 " />
             <p className="text-2xl ">Pradip Chapagain</p>
@@ -65,13 +65,13 @@ const Team = () => {
       {/* /* RESOURCES */}
       <div
         className="flex flex-col justify-center items-center gap-y-16 ' p-16"
-        style={{ backgroundColor: "#E7F5FF" }}
+        style={{ backgroundColor: "#202A44" }}
       >
-        <h2 className="team-name text-4xl font-semibold text-center">
-          Technical Team
+        <h2 className="team-name text-4xl font-semibold text-center text-white font-mono">
+          "TECHNICAL TEAM"
         </h2>
 
-        <div className="flex flex-col md:flex-row  gap-y-20 justify-center">
+        <div className="flex flex-col md:flex-row  gap-y-20 justify-center text-white font-akshar">
           <div className="flex flex-col justify-center items-center gap-y-2">
             <img src={dear} className="h-72 w-72 " />
             <p className="text-2xl ">Hemanta Sharma</p>
@@ -85,13 +85,13 @@ const Team = () => {
 
       <div
         className="flex flex-col justify-center items-center gap-y-16 ' p-16"
-        style={{ backgroundColor: "#FFF5F5" }}
+        style={{ backgroundColor: "#202A44" }}
       >
-        <h2 className="team-name text-4xl font-semibold text-center">
-          Outreach Team
+        <h2 className="team-name text-4xl font-semibold text-center text-white font-mono">
+          "OUTREACH TEAM"
         </h2>
 
-        <div className="flex flex-col md:flex-row  gap-y-20 justify-center">
+        <div className="flex flex-col md:flex-row  gap-y-20 justify-center text-white font-akshar">
           <div className="flex flex-col justify-center items-center gap-y-2">
             <img src={hancy} className="h-72 w-72 " />
             <p className="text-2xl ">Pradip Chapagain</p>
@@ -117,13 +117,13 @@ const Team = () => {
 
       <div
         className="flex flex-col justify-center items-center gap-y-16 ' p-16"
-        style={{ backgroundColor: "#E7F5FF" }}
+        style={{ backgroundColor: "#202A44" }}
       >
-        <h2 className="team-name text-4xl font-semibold text-center">
-          Web Team
+        <h2 className="team-name text-4xl font-semibold text-center text-white font-mono">
+          "WEB TEAM"
         </h2>
 
-        <div className="flex flex-col md:flex-row  gap-y-20 justify-center">
+        <div className="flex flex-col md:flex-row  gap-y-20 justify-center text-white font-akshar">
           <div className="flex flex-col justify-center items-center gap-y-2">
             <img src={hancy} className="h-72 w-72 " />
             <p className="text-2xl ">Pradip Chapagain</p>
@@ -136,22 +136,18 @@ const Team = () => {
             <img src={rishi} className="h-72 w-72 " />
             <p className="text-2xl ">Rishi Aryal</p>
           </div>
-          {/* <div className="flex flex-col justify-center items-center gap-y-2">
-            <img src={suyog} className="h-72 w-72 " />
-            <p className="text-2xl ">Suyog Shrestha</p>
-          </div> */}
         </div>
       </div>
 
       <div
         className="flex flex-col justify-center items-center gap-y-16 ' p-16"
-        style={{ backgroundColor: "#FFF5F5" }}
+        style={{ backgroundColor: "#202A44" }}
       >
-        <h2 className="team-name text-4xl font-semibold text-center">
-          Event Host
+        <h2 className="team-name text-4xl font-semibold text-center text-white font-mono">
+          "EVENT HOSTS"
         </h2>
 
-        <div className="flex flex-col md:flex-row  gap-y-20 justify-center">
+        <div className="flex flex-col md:flex-row  gap-y-20 justify-center text-white font-akshar">
           <div className="flex flex-col justify-center items-center gap-y-2">
             <img src={rajmaster} className="h-72 w-72 " />
             <p className="text-2xl ">Samip Lamsal</p>
@@ -165,13 +161,13 @@ const Team = () => {
 
       <div
         className="flex flex-col justify-center items-center gap-y-16 ' p-16"
-        style={{ backgroundColor: "#E7F5FF" }}
+        style={{ backgroundColor: "#202A44" }}
       >
-        <h2 className="team-name text-4xl font-semibold text-center">
-          Graphics Team
+        <h2 className="team-name text-4xl font-semibold text-center text-white font-mono">
+          "GRAPHICS TEAM"
         </h2>
 
-        <div className="flex flex-col md:flex-row  gap-y-20 justify-center">
+        <div className="flex flex-col md:flex-row  gap-y-20 justify-center text-white font-akshar">
           <div className="flex flex-col justify-center items-center gap-y-2">
             <img src={abinash} className="h-72 w-72 " />
             <p className="text-2xl ">Abhinash Tiwari</p>
@@ -189,13 +185,13 @@ const Team = () => {
 
       <div
         className="flex flex-col justify-center items-center gap-y-16 ' p-16"
-        style={{ backgroundColor: "#FFF5F5" }}
+        style={{ backgroundColor: "#202A44" }}
       >
-        <h2 className="team-name text-4xl font-semibold text-center">
-          Media Team
+        <h2 className="team-name text-4xl font-semibold text-center text-white font-mono">
+          "MEDIA TEAM"
         </h2>
 
-        <div className="flex flex-col md:flex-row  gap-y-20 justify-center">
+        <div className="flex flex-col md:flex-row  gap-y-20 justify-center text-white font-akshar">
           <div className="flex flex-col justify-center items-center gap-y-2">
             <img src={ranji} className="h-72 w-72 " />
             <p className="text-2xl ">Rohan Shrestha</p>
