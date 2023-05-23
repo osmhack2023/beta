@@ -36,7 +36,7 @@ function Header() {
                 <div className='flex flex-row items-center gap-x-2'>
                     {/* <img src={location} className='h-'></img> */}
                     {/* <GoLocation className='text-white text-5xl'></GoLocation> */}
-                    <h1 className='text-2xl md:text-3xl text-center'
+                    <h1 className='text-xl md:text-3xl text-center'
                         style={
                             { "fontWeight": "600", "lineHeight": "53px", "color": "#FFFFFF", "textShadow": "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)", "backdropFilter": "blur(5.5px)" }
                         }
@@ -47,8 +47,8 @@ function Header() {
                 <div className='flex flex-row items-center gap-x-4'>
                     {/* <img src={calender}></img> */}
 
-                    <BsCalendarEvent className='text-white text-3xl md:text-5xl'></BsCalendarEvent>
-                    <h1 className=' text-2xl md:text-3xl'
+                    <BsCalendarEvent className='text-white text-2xl md:text-5xl'></BsCalendarEvent>
+                    <h1 className=' text-xl md:text-3xl'
                         style={
                             { "fontWeight": "600", "lineHeight": "53px", "color": "#FFFFFF", "textShadow": "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)", "backdropFilter": "blur(5.5px)" }
                         }
