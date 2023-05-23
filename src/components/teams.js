@@ -22,12 +22,12 @@ const Team = () => {
         className="flex flex-col gap-y-10"
         style={{ backgroundColor: "#202A44" }}
       >
-        <h1 className="text-3xl md:text-3xl font-bold font-inter text-center text-rednew mt-5">
-          <u>ORGANIZERS</u>
+        <h1 className="text-3xl md:text-4xl font-bold font-inter text-center text-[#ff3131] pt-14 tracking-wider">
+          ORGANIZERS
         </h1>
         <div className="flex flex-col justify-center items-center gap-y-5 pb-10 text-white">
-          <h2 className="team-name text-4xl font-semibold text-center font-mono">
-          "EVENT LEAD" 
+          <h2 className="team-name text-3xl font-semibold text-center font-mono">
+            "EVENT LEAD"
           </h2>
           <img src={samir} className="h-72 w-72 " />
           <p className="text-2xl font-semibold font-akshar">Samir Koirala</p>
@@ -39,7 +39,7 @@ const Team = () => {
         className="flex flex-col justify-center items-center gap-y-16  p-16"
         style={{ backgroundColor: "#202A44" }}
       >
-        <h2 className="team-name text-4xl font-semibold text-center text-white font-mono">
+        <h2 className="team-name text-3xl font-semibold text-center text-white font-mono">
           "RESOURCES TEAM"
         </h2>
 
@@ -67,7 +67,7 @@ const Team = () => {
         className="flex flex-col justify-center items-center gap-y-16 ' p-16"
         style={{ backgroundColor: "#202A44" }}
       >
-        <h2 className="team-name text-4xl font-semibold text-center text-white font-mono">
+        <h2 className="team-name text-3xl font-semibold text-center text-white font-mono">
           "TECHNICAL TEAM"
         </h2>
 
@@ -87,7 +87,7 @@ const Team = () => {
         className="flex flex-col justify-center items-center gap-y-16 ' p-16"
         style={{ backgroundColor: "#202A44" }}
       >
-        <h2 className="team-name text-4xl font-semibold text-center text-white font-mono">
+        <h2 className="team-name text-3xl font-semibold text-center text-white font-mono">
           "OUTREACH TEAM"
         </h2>
 
@@ -119,7 +119,7 @@ const Team = () => {
         className="flex flex-col justify-center items-center gap-y-16 ' p-16"
         style={{ backgroundColor: "#202A44" }}
       >
-        <h2 className="team-name text-4xl font-semibold text-center text-white font-mono">
+        <h2 className="team-name text-3xl font-semibold text-center text-white font-mono">
           "WEB TEAM"
         </h2>
 
@@ -143,7 +143,7 @@ const Team = () => {
         className="flex flex-col justify-center items-center gap-y-16 ' p-16"
         style={{ backgroundColor: "#202A44" }}
       >
-        <h2 className="team-name text-4xl font-semibold text-center text-white font-mono">
+        <h2 className="team-name text-3xl font-semibold text-center text-white font-mono">
           "EVENT HOSTS"
         </h2>
 
@@ -163,7 +163,7 @@ const Team = () => {
         className="flex flex-col justify-center items-center gap-y-16 ' p-16"
         style={{ backgroundColor: "#202A44" }}
       >
-        <h2 className="team-name text-4xl font-semibold text-center text-white font-mono">
+        <h2 className="team-name text-3xl font-semibold text-center text-white font-mono">
           "GRAPHICS TEAM"
         </h2>
 
@@ -187,7 +187,7 @@ const Team = () => {
         className="flex flex-col justify-center items-center gap-y-16 ' p-16"
         style={{ backgroundColor: "#202A44" }}
       >
-        <h2 className="team-name text-4xl font-semibold text-center text-white font-mono">
+        <h2 className="team-name text-3xl font-semibold text-center text-white font-mono">
           "MEDIA TEAM"
         </h2>
 

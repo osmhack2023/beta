@@ -20,12 +20,12 @@ function Header() {
             }}
         >
             <div className='flex flex-col '>
-                <h1 className='text-center font-inter text-4xl  md:text-7xl text-white p-auto gap-y-0 -z-1 font-akshar'
+                <h1 className='text-center  text-4xl  md:text-7xl text-white p-auto gap-y-0 -z-1 font-akshar'
                     style={
                         { "color": "#FFFFFF", "fontWeight": "600", "textShadow": "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)", "backdropFilter": "blur(7.5px)" }
                     }
-                >"OSM Hack 2023"</h1>
-                <h2 className='text-center font-inter text-2xl md:text-5xl text-white mt-5 font-akshar'
+                >OSM Hack 2023</h1>
+                <h2 className='text-center  text-2xl md:text-4xl text-white mt-5 font-akshar'
                     style={{ "textShadow": "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)", "backdropFilter": "blur(7.5px)", "fontWeight": "700", "font-style": "italic" }}
                 > OSM for a good cause</h2>
 
@@ -47,7 +47,7 @@ function Header() {
                 <div className='flex flex-row items-center gap-x-4'>
                     {/* <img src={calender}></img> */}
 
-                    <BsCalendarEvent className='text-white text-2xl md:text-5xl'></BsCalendarEvent>
+                    <BsCalendarEvent className='text-white text-2xl md:text-3xl'></BsCalendarEvent>
                     <h1 className=' text-xl md:text-3xl'
                         style={
                             { "fontWeight": "600", "lineHeight": "53px", "color": "#FFFFFF", "textShadow": "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)", "backdropFilter": "blur(5.5px)" }
